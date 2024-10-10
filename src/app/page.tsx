@@ -14,8 +14,8 @@ import media_3 from "./img/media-3.png";
 import media_4 from "./img/media-4.png";
 import compute_1 from "./img/compute_1.png";
 import compute_2 from "./img/compute_2.png";
-import revolution_section__nvidia_logo from "@/app/img/revalution/revolution-nvidia-logo.png";
-import revolution_cpu_img from "@/app/img/revalution/revolution-cpu-img.png";
+// import revolution_section__nvidia_logo from "@/app/img/revalution/revolution-nvidia-logo.png";
+// import revolution_cpu_img from "@/app/img/revalution/revolution-cpu-img.png";
 import Link from "next/link";
 import runtime__right from "./img/runtime/runtime__right.svg";
 import climate from "./img/runtime/climate.png";
@@ -449,7 +449,7 @@ export default function Home() {
                 The Opportunity:
               </Link>
               <h2 className="dont__wrap__left__title">
-                Don't Just
+                Don&apos;t Just
                 <br /> Trust AI
               </h2>
               <p className="dont__wrap__left__text">
