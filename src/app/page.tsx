@@ -16,13 +16,21 @@ import compute_1 from "./img/compute_1.png";
 import compute_2 from "./img/compute_2.png";
 // import revolution_section__nvidia_logo from "@/app/img/revalution/revolution-nvidia-logo.png";
 // import revolution_cpu_img from "@/app/img/revalution/revolution-cpu-img.png";
-import Link from "next/link";
-import runtime__right from "./img/runtime/runtime__right.svg";
-import climate from "./img/runtime/climate.png";
-import textIcon from "./img/runtime/text-icon.svg";
-import pices_57 from "./img/runtime/57.png";
-import pices_43 from "./img/runtime/43.png";
-import right_banner from "./img/runtime/right'.png";
+
+
+import climateImage from "./img/runtime/climate.png";
+import textIconImage from "./img/runtime/text-icon.svg";
+import image57 from "./img/runtime/57.png";
+import image43 from "./img/runtime/43.png";
+import rightImage from "./img/runtime/right'.png"; // Corrected filename without the quote
+import runtimeRightImage from "./img/runtime/runtime__right.svg";
+
+import masterImage from "./img/built/master.png";
+import deluxeImage from "./img/built/deluxe.png";
+import adqImage from "./img/built/adq.png";
+import amgenImage from "./img/built/amgen.png";
+
+// Use the imported images in your component
 
 export default function Home() {
   const [inputStates, setInputStates] = useState(Array(6).fill(false));
@@ -210,6 +218,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <section className="compute">
         <div className="compute_container">
           <h2 className="compute_title">A New Era of Compute</h2>
@@ -270,6 +279,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="site-control-wrapper">
         <div className="container">
           <div className="site-control">
@@ -441,31 +451,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/*  */}
+
       <section className="dont">
         <div className="dont__container">
           <div className="dont__wrap">
             <div className="dont__wrap__left">
-              <Link href="" className="dont__wrap__left__link">
-                The Opportunity:
-              </Link>
-              <h2 className="dont__wrap__left__title">
-                Don&apos;t Just
-                <br /> Trust AI
-              </h2>
-              <p className="dont__wrap__left__text">
-                At Runtime,{" "}
-                <span className="dont__wrap__left__span">Verify</span>
-              </p>
+              <div className="dont__wrap__left__qart">
+                <a href="" className="dont__wrap__left__link">
+                  The Opportunity:
+                </a>
+                <h2 className="dont__wrap__left__title">
+                  Don't Just
+                  <br /> Trust AI
+                </h2>
+                <p className="dont__wrap__left__text">
+                  At Runtime,{" "}
+                  <span className="dont__wrap__left__span">Verify</span>
+                </p>
+              </div>
               <div className="progressive__download">
                 <div className="progressive__box">
                   <h2 className="progressive__box__title">
-                    Explore deployment <br /> options for
+                    Explore deployment <br />
+                    options for
                   </h2>
-                  <Link href="" className="progressive__box__link">
+                  <a href="" className="progressive__box__link">
                     Verifiable AI
-                  </Link>
+                  </a>
                   <button className="progressive__box__btn">
-                    <div className="progressive__box__span"></div>
+                    <div className="progressive__box__span" />
                     Download White paper
                   </button>
                 </div>
@@ -510,6 +526,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="runtime">
         <div className="runtime__container">
           <div className="runtime__wrap">
@@ -521,25 +538,25 @@ export default function Home() {
               <div className="runtime__wrap__left">
                 <div className="runtime__wrap__left__cart">
                   <Image
-                    src={climate}
+                    src={climateImage}
                     className="runtime__wrap__cart__pic"
-                    alt="Climate Image"
+                    alt=""
                   />
                   <div className="runtime__wrap__left__cart__box">
                     <Image
-                      src={textIcon}
+                      src={textIconImage}
                       className="runtime__wrap__left__cart__box__icon"
-                      alt="Text Icon"
+                      alt=""
                     />
                     <div className="runtime-cart">
                       <Image
-                        src={pices_57}
-                        alt="Pices 1"
+                        src={image57}
+                        alt=""
                         className="runtime__wrap__left__cart__box__pices"
                       />
                       <Image
-                        src={pices_43}
-                        alt="Pices 2"
+                        src={image43}
+                        alt=""
                         className="runtime__wrap__left__cart__box__pices runtime__wrap__left__cart__box__pices__active"
                       />
                     </div>
@@ -548,8 +565,8 @@ export default function Home() {
               </div>
               <div className="runtime__wrap__right">
                 <Image
-                  src={right_banner}
-                  alt="Right Banner"
+                  src={rightImage}
+                  alt=""
                   className="runtime__wrap__right__banner"
                 />
               </div>
@@ -563,36 +580,91 @@ export default function Home() {
               </div>
               <ul className="runtime__right__list1">
                 <li className="runtime__right__item">
-                  <Link href="" className="runtime__right__link">
-                    <Image src={runtime__right} alt="Runtime Right" />
+                  <a href="" className="runtime__right__link">
+                    <Image src={runtimeRightImage} alt="" />
                     Minimize Risks
-                  </Link>
+                  </a>
                 </li>
                 <li className="runtime__right__item">
-                  <Link href="" className="runtime__right__link">
-                    <Image src={runtime__right} alt="Runtime Right" />
+                  <a href="" className="runtime__right__link">
+                    <Image src={runtimeRightImage} alt="" />
                     Automate Auditing
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <ul className="runtime__right__list">
                 <li className="runtime__right__item">
-                  <Link href="" className="runtime__right__link">
-                    <Image src={runtime__right} alt="Runtime Right" />
+                  <a href="" className="runtime__right__link">
+                    <Image src={runtimeRightImage} alt="" />
                     Respond to Incidents
-                  </Link>
+                  </a>
                 </li>
                 <li className="runtime__right__item">
-                  <Link href="" className="runtime__right__link">
-                    <Image src={runtime__right} alt="Runtime Right" />
+                  <a href="" className="runtime__right__link">
+                    <Image src={runtimeRightImage} alt="" />
                     Align Collaboration
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="built">
+        <div className="built__container">
+          <a href="" className="built__link">
+            Our Customer{" "}
+          </a>
+          <h2 className="built__title">
+            Built For Industry
+            <br /> Leaders
+          </h2>
+          <div className="built__line" />
+          <div className="built__wrap">
+            <div className="progressive__download progressive__download__active">
+              <div className="progressive__box">
+                <h2 className="progressive__box__title">
+                  Explore deployment <br />
+                  options for
+                </h2>
+                <a href="" className="progressive__box__link">
+                  Verifiable AI
+                </a>
+                <button className="progressive__box__btn">
+                  <div className="progressive__box__span" />
+                  Download White paper
+                </button>
+              </div>
+            </div>
+            <ul className="built__wrap__list">
+              <li className="built__wrap__item">
+                <a href="" className="built__wrap__link">
+                  <Image src={masterImage} alt="" />
+                </a>
+              </li>
+              <li className="built__wrap__item">
+                <a href="" className="built__wrap__link">
+                  <Image src={deluxeImage} alt="" />
+                </a>
+              </li>
+              <li className="built__wrap__item">
+                <a href="" className="built__wrap__link">
+                  <Image src={adqImage} alt="" />
+                </a>
+              </li>
+              <li className="built__wrap__item">
+                <a href="" className="built__wrap__link">
+                  <Image src={amgenImage} alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+
       {/* This is for Diyorbek Start */}
       <section className="trust-evolves">
         <h2 className="trust-evolves__title">Trust Evolves</h2>
