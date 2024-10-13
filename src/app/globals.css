@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Lausanne";
-  src: url("/fonts/Lausanne.ttf") format("truetype");
+  src: url("/fonts/lausanne.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Lausanne", sans-serif;
+  font-family: sans-serif;
 }
 
 * {
@@ -828,6 +828,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1648px;
+  position: relative;
 }
 
 .progressive__title {
@@ -891,12 +892,18 @@ body {
   display: flex;
   background: #000000b2;
   width: 350px;
-  margin-left: auto;
+  /* margin-left: auto; */
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   clip-path: polygon(100% 0, 100% 75%, 85% 100%, 0 100%, 0 0);
   border-bottom-right-radius: 30px;
+
+
+
+  /* for BUG */
+
+  display: none
 }
 
 .progressive__box {
@@ -1133,7 +1140,7 @@ body {
 
 /* =========================================== Customer Start =========================================== */
 .customer {
-  margin-top: -170px;
+  margin-top: -74px;
   padding-bottom: 100px;
   background-color: #f5f5f7;
 }
@@ -2058,128 +2065,581 @@ body {
   }
 }
 
+
+/*  */
+
+
+.trust {
+        padding-top: 100px;
+        padding-bottom: 151px;
+        background-color: white;
+        font-family: sans-serif;
+    }
+
+    .trust_container {
+        max-width: 1728px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 87px;
+        padding-right: 24px;
+    }
+
+    .trust_top {
+        display: flex;
+        position: relative;
+        margin-bottom: 117px;
+    }
+
+    .turst_left {
+        max-width: 673px;
+        width: 100%;
+    }
+
+    .trust_title {
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 80px;
+        letter-spacing: -0.01em;
+        background: linear-gradient(100.04deg, #000000 -8.29%, #8B8B8B 66.36%);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 48px;
+    }
+
+    .trust_text {
+        max-width: 600px;
+        font-size: 32px;
+        font-weight: 250;
+        line-height: 39px;
+        letter-spacing: 0.01em;
+        color: #666666;
+    }
+
+    .trust_text>span {
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .turst_right {
+        max-width: 985px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+    }
+
+    .turst_right_img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .trust_bottom {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding-right: 305px;
+    }
+
+    .trust_bottom_left {
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 0px 10px 0px #0000001F;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 11px 18px 11px 16px;
+        border-radius: 40px;
+        max-width: 227px;
+        width: 100%;
+    }
+
+    .trust_bottom_left_title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #0d0d0d;
+    }
+
+    .trust_bottom_left_toogle {
+        max-width: 42px;
+        width: 100%;
+        background-color: #CECECE;
+        border-radius: 100px;
+        position: relative;
+        height: 22px;
+    }
+
+    .trust_bottom_left_toogle_round {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px 0px #00000026;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+    }
+
+    .trust_bottom_right {
+        max-width: 533px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 0px 10px 0px #0000001F;
+        padding: 15.5px 18px 14.5px 16px;
+        border-radius: 40px;
+    }
+
+    .trust_bottom_right_text_box {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .trust_bottom_right_text_box_round {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+    }
+
+    .trust_bottom_right_text_box_text {
+        font-size: 16px;
+        font-weight: 250;
+        letter-spacing: 0.01em;
+        opacity: 60%;
+        text-transform: uppercase;
+    }
+
+    .green {
+        background-color: #1EF49A;
+    }
+
+    .red {
+        background-color: #f00;
+    }
+
+    .blue {
+        background-color: #94a3b8;
+    }
+
+    @media(max-width:1665px){
+        .trust_container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .trust_top{
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+        .turst_right{
+            position: static;
+            margin-left: auto;
+        }
+        .trust_bottom{
+            padding-right: 0;
+            gap: 20px;
+        }
+    }
+
+    @media(max-width:1024px){
+        .trust_title{
+            font-size: 64px;
+            line-height: 64px;
+        }
+        .trust_text{
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+
+    @media(max-width:830px){
+        .trust_bottom{
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    @media(max-width:768px){
+        .trust{
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        .trust_top{
+            margin-bottom: 60px;
+        }
+        .trust_title{
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 28px;
+        }
+        .trust_text{
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .trust_bottom_right{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .trust_bottom_right_text_box_text{
+            font-size: 14px;
+        }
+        .trust_bottom_left_title{
+            font-size: 16px;
+        }
+    }
+
+    @media(max-width:375px){
+        .trust{
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+        .trust_top{
+            margin-bottom: 50px;
+        }
+        .trust_title{
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+        .trust_text{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .trust_bottom_left_title{
+            font-size: 14px;
+        }
+        .trust_bottom_right_text_box_text{
+            font-size: 12px;
+        }
+    }
+
+
 /* this is for Diyorbek */
 
+
 .trust-evolves {
-  background-color: #fff;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+        background-color: #fff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-.trust-evolves__title {
-  text-align: center;
-  font-size: 140px;
-  font-weight: 400;
-  line-height: 140px;
-  letter-spacing: -0.01em;
-  color: transparent;
-  background: linear-gradient(106.37deg, #000000 7.38%, #8b8b8b 71.92%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: text;
-}
+      .trust-evolves__title {
+        text-align: center;
+        font-size: 140px;
+        font-weight: 400;
+        line-height: 140px;
+        letter-spacing: -0.01em;
+        color: transparent;
+        background: linear-gradient(106.37deg, #000000 7.38%, #8b8b8b 71.92%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: text;
+      }
 
-.revolution-section {
-  background: #f5f5f7;
-  padding-top: 112px;
-}
+      .revolution-section {
+        background: #f5f5f7;
+        padding-top: 112px;
+      }
 
-.revolution-section__container {
-  max-width: 1556px;
-  margin: 0 auto;
-}
+      .revolution-section__container {
+        max-width: 1556px;
+        margin: 0 auto;
+      }
 
-.revolution-section__header {
-  display: inline-block;
-  padding: 12px 16px 12px 16px;
-  gap: 4px;
-  border-radius: 100px;
-  background: #0000001a;
-  font-size: 20px;
-}
+      .revolution-section__header {
+        display: inline-block;
+        padding: 12px 16px 12px 16px;
+        gap: 4px;
+        border-radius: 100px;
+        background: #0000001a;
+        font-size: 20px;
+      }
 
-.revolution-section__content {
-  max-width: 998px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+      .revolution-section__content {
+        max-width: 998px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-.revolution-section__title {
-  padding-top: 23px;
-  text-align: center;
-  font-size: 80px;
-  font-weight: 400;
-  line-height: 80px;
-  color: transparent;
-  background: linear-gradient(106.37deg, #000000 7.38%, #8b8b8b 71.92%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: text;
-}
+      .revolution-section__title {
+        padding-top: 23px;
+        text-align: center;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 80px;
+        color: transparent;
+        background: linear-gradient(106.37deg, #000000 7.38%, #8b8b8b 71.92%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: text;
+      }
 
-.revolution-section__images {
-  padding-top: 75px;
-  display: flex;
-  justify-content: space-between;
-}
+      .revolution-section__images {
+        padding-top: 75px;
+        display: flex;
+        justify-content: space-between;
+      }
 
-.revolution-section__list {
-  list-style: none;
-}
+      .revolution-section__list {
+        list-style: none;
+      }
 
-.revolution-section__details {
-  padding-top: 99px;
-  max-width: 468px;
-}
+      .revolution-section__details {
+        padding-top: 99px;
+        max-width: 468px;
+      }
 
-.revolution-section__list {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
+      .revolution-section__list {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+      }
 
-.revolution-section__list-item-title {
-  line-height: 43.2px;
-  font-size: 32px;
-  font-weight: 250;
-}
+      .revolution-section__list-item-title {
+        line-height: 43.2px;
+        font-size: 32px;
+        font-weight: 250;
+      }
 
-.revolution-section__cpu-image {
-  padding-top: 79px;
-}
+      .revolution-section__cpu-image {
+        padding-top: 79px;
+      }
 
-@media (max-width: 1000px) {
-  .revolution-section__title {
-    font-size: 50px;
-    line-height: 50px;
-  }
+      @media (max-width: 1000px) {
+        .revolution-section__title {
+          font-size: 50px;
+          line-height: 50px;
+        }
 
-  .trust-evolves__title {
-    font-size: 50px;
-    line-height: 50px;
-  }
-}
+        .trust-evolves__title {
+          font-size: 50px;
+          line-height: 50px;
+        }
+      }
 
-@media (max-width: 500px) {
-  .trust-evolves {
-    height: 100vh;
-    padding: 0;
-  }
+      @media (max-width: 500px) {
+        .trust-evolves {
+          height: 100vh;
+          padding: 0;
+        }
 
-  .revolution-section__title {
-    font-size: 30px;
-    line-height: 30px;
-  }
+        .revolution-section__title {
+          font-size: 30px;
+          line-height: 30px;
+        }
 
-  .trust-evolves__title {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
+        .trust-evolves__title {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+
+      .revolution-section__images-and-text {
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: start; */
+      }
+
+      .revolution-section__images-and-text img:last-child {
+        padding-top: 71px;
+      }
+
+      .revolution-section__text {
+        margin-top: 120px;
+        max-width: 468px;
+      }
+
+      .revolution-section__text p {
+        font-size: 32px;
+        font-weight: 250;
+      }
+
+      .revolution-section__text p:first-child {
+        margin-bottom: 100px;
+      }
+
+      .digital-notary__container {
+        max-width: 468px;
+        margin: 0 auto;
+        padding-top: 200px;
+      }
+
+      .digital-notary__title,
+      .digital-notary__description {
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .digital-notary__description {
+        font-weight: 250;
+      }
+
+      @media (max-width: 1180px) {
+        .revolution-section__images-and-text {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .integrated-solutions {
+        max-width: 691px;
+        margin: 0 auto;
+        padding-left: 110px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .integrated-solutions__title {
+        max-width: 405px;
+        font-size: 32px;
+        font-weight: 250;
+        line-height: 43.2px;
+      }
+
+      .integrated-solutions__links {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .secure-ai-infrastructure {
+        padding-top: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 120px;
+      }
+
+      .secure-ai-infrastructure__header {
+        display: inline-block;
+        padding: 12px 16px 12px 16px;
+        gap: 4px;
+        border-radius: 100px;
+        background: #0000001a;
+        font-size: 20px;
+      }
+
+      .secure-ai-infrastructure__description {
+        font-size: 32px;
+        font-weight: 600;
+        max-width: 600px;
+      }
+
+      .zero-trust-wrapper {
+        background: #f5f5f7;
+      }
+
+      .zero-trust {
+        padding-top: 148px;
+        max-width: 1556px;
+        padding: 0 12px;
+        margin: 0 auto;
+        padding-bottom: 347px;
+      }
+
+      .zero-trust__content {
+        width: 465px;
+        font-size: 32px;
+      }
+
+      .zero-trust__description {
+        font-weight: 250;
+      }
+
+      .zero-trust__image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .zero-trust__image {
+        max-width: 659.01px;
+        height: 392px;
+      }
+
+      @media (max-width: 790px) {
+        .zero-trust,
+        .integrated-solutions {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .integrated-solutions {
+          gap: 30px;
+          padding-left: 0;
+        }
+
+        .zero-trust__image {
+          width: 100%;
+        }
+
+        .compliant-ready-image{
+              display: none;
+        }
+      }
+
+      .compliant-ready-section {
+        background: #f5f5f7;
+      }
+
+      .compliant-ready-content {
+        padding-top: 100px;
+        max-width: 991px;
+        padding: 0 12px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .compliant-ready-title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 60px;
+      }
+
+      .compliant-ready-features {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+      }
+
+      .compliant-ready-feature {
+        max-width: 290px;
+        border-top: 1px solid #00000033;
+        padding-top: 33px;
+        font-size: 24px;
+        font-weight: 250;
+      }
+
+      .compliant-ready-feature-highlight{
+              font-weight: 500;
+      }
+
+      .compliant-ready-image {
+        width: 100%;
+        height: 250px;
+      }
+
 
 /* this is for Diyorbek End  */
 
@@ -2210,7 +2670,7 @@ body {
     }
 
     .dont__wrap__left__link {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 20px;
         font-weight: 250;
         line-height: 25px;
@@ -2229,7 +2689,7 @@ body {
     }
 
     .dont__wrap__left__title {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -2244,7 +2704,7 @@ body {
     }
 
     .dont__wrap__left__text {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -2255,7 +2715,7 @@ body {
     }
 
     .dont__wrap__left__span {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -2285,7 +2745,7 @@ body {
     }
 
     .progressive__box__title {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 24px;
         font-weight: 250;
         line-height: 32.4px;
@@ -2297,7 +2757,7 @@ body {
     }
 
     .progressive__box__link {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 24px;
         font-weight: 300;
         line-height: 32.4px;
@@ -2389,7 +2849,6 @@ body {
     }
 
     .dont__wrap__right__title {
-        font-family: TWK Lausanne;
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -2409,7 +2868,7 @@ body {
     }
 
     .dont__wrap__right__text {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 26px;
         font-weight: 300;
         line-height: 35.1px;
@@ -2421,7 +2880,7 @@ body {
 
     .dont__wrap__right__text__active {
         color: #34869D99;
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 26px;
         font-weight: 300;
         line-height: 35.1px;
@@ -2463,7 +2922,7 @@ body {
             margin-right: auto;
         }
         .dont__wrap__left__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 28px;
             font-weight: 250;
             line-height: 25px;
@@ -2483,7 +2942,7 @@ body {
         }
 
         .dont__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 37px;
             font-weight: 400;
             line-height: 40px;
@@ -2503,7 +2962,7 @@ body {
         }
 
         .dont__wrap__left__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 33px;
             font-weight: 400;
             line-height: 40px;
@@ -2515,7 +2974,7 @@ body {
         }
 
         .dont__wrap__left__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 40px;
@@ -2548,7 +3007,7 @@ body {
         }
 
         .progressive__box__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 25px;
             font-weight: 250;
             line-height: 25.4px;
@@ -2560,7 +3019,7 @@ body {
         }
 
         .progressive__box__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 300;
             line-height: 32.4px;
@@ -2658,7 +3117,7 @@ body {
         }
 
         .dont__wrap__right__title {
-            font-family: TWK Lausanne;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 40px;
@@ -2678,7 +3137,7 @@ body {
         }
 
         .dont__wrap__right__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 300;
             line-height: 35.1px;
@@ -2690,7 +3149,7 @@ body {
 
         .dont__wrap__right__text__active {
             color: #34869D99;
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 26px;
             font-weight: 300;
             line-height: 35.1px;
@@ -2728,7 +3187,7 @@ body {
         }
 
         .dont__wrap__left__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 35px;
             font-weight: 250;
             line-height: 25px;
@@ -2748,7 +3207,7 @@ body {
         }
 
         .dont__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 45px;
             font-weight: 400;
             line-height: 50px;
@@ -2768,7 +3227,7 @@ body {
         }
 
         .dont__wrap__left__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 40px;
             font-weight: 400;
             line-height: 40px;
@@ -2780,7 +3239,7 @@ body {
         }
 
         .dont__wrap__left__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 40px;
@@ -2811,7 +3270,7 @@ body {
         }
 
         .progressive__box__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 25px;
             font-weight: 250;
             line-height: 25.4px;
@@ -2823,7 +3282,7 @@ body {
         }
 
         .progressive__box__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 300;
             line-height: 32.4px;
@@ -2911,7 +3370,7 @@ body {
         }
 
         .dont__wrap__right__title {
-            font-family: TWK Lausanne;
+
             font-size: 40px;
             font-weight: 400;
             line-height: 40px;
@@ -2931,7 +3390,7 @@ body {
         }
 
         .dont__wrap__right__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 300;
             line-height: 35.1px;
@@ -2943,7 +3402,7 @@ body {
 
         .dont__wrap__right__text__active {
             color: #34869D99;
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 26px;
             font-weight: 300;
             line-height: 35.1px;
@@ -2981,7 +3440,7 @@ body {
         }
 
         .dont__wrap__left__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 18px;
             font-weight: 250;
             line-height: 25px;
@@ -3001,7 +3460,7 @@ body {
         }
 
         .dont__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 26px;
             font-weight: 400;
             line-height: 40px;
@@ -3021,7 +3480,7 @@ body {
         }
 
         .dont__wrap__left__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 25px;
             font-weight: 400;
             line-height: 40px;
@@ -3033,7 +3492,7 @@ body {
         }
 
         .dont__wrap__left__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 25px;
             font-weight: 400;
             line-height: 40px;
@@ -3059,7 +3518,7 @@ body {
         }
 
         .progressive__box__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 18px;
             font-weight: 250;
             line-height: 25.4px;
@@ -3071,7 +3530,7 @@ body {
         }
 
         .progressive__box__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 18px;
             font-weight: 300;
             line-height: 32.4px;
@@ -3164,7 +3623,7 @@ body {
         }
 
         .dont__wrap__right__title {
-            font-family: TWK Lausanne;
+
             font-size: 25px;
             font-weight: 400;
             line-height: 40px;
@@ -3184,7 +3643,7 @@ body {
         }
 
         .dont__wrap__right__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 18px;
             font-weight: 300;
             line-height: 35.1px;
@@ -3196,7 +3655,7 @@ body {
 
         .dont__wrap__right__text__active {
             color: #34869D99;
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 22px;
             font-weight: 300;
             line-height: 35.1px;
@@ -3232,7 +3691,7 @@ body {
     }
 
     .runtime__wrap__left__title {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -3242,7 +3701,7 @@ body {
     }
 
     .runtime__wrap__left__title__span {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -3300,7 +3759,7 @@ body {
     }
 
     .runtime__right__cart__title {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -3318,7 +3777,7 @@ body {
     }
 
     .runtime__right__cart__text {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 26px;
         font-weight: 300;
         line-height: 35.1px;
@@ -3344,7 +3803,7 @@ body {
     }
 
     .runtime__right__link {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 32px;
         font-weight: 400;
         line-height: 43.2px;
@@ -3385,7 +3844,7 @@ body {
         }
 
         .runtime__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 40px;
             font-weight: 400;
             line-height: 30px;
@@ -3397,7 +3856,7 @@ body {
         }
 
         .runtime__wrap__left__title__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 40px;
             font-weight: 400;
             line-height: 30px;
@@ -3480,7 +3939,7 @@ body {
         }
 
         .runtime__right__cart__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 37px;
             font-weight: 400;
             line-height: 35px;
@@ -3498,7 +3957,7 @@ body {
         }
 
         .runtime__right__cart__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 15px;
             font-weight: 300;
             line-height: 10px;
@@ -3530,7 +3989,7 @@ body {
         }
 
         .runtime__right__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 18px;
             font-weight: 400;
             line-height: 23.2px;
@@ -3570,7 +4029,7 @@ body {
         }
 
         .runtime__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 30px;
@@ -3582,7 +4041,7 @@ body {
         }
 
         .runtime__wrap__left__title__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 30px;
@@ -3660,7 +4119,7 @@ body {
         }
 
         .runtime__right__cart__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 28px;
             font-weight: 400;
             line-height: 35px;
@@ -3678,7 +4137,7 @@ body {
         }
 
         .runtime__right__cart__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 14px;
             font-weight: 300;
             line-height: 10px;
@@ -3706,7 +4165,7 @@ body {
         }
 
         .runtime__right__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 16px;
             font-weight: 400;
             line-height: 23.2px;
@@ -3745,7 +4204,7 @@ body {
         }
 
         .runtime__wrap__left__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 30px;
@@ -3757,7 +4216,7 @@ body {
         }
 
         .runtime__wrap__left__title__span {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 30px;
@@ -3837,7 +4296,7 @@ body {
         }
 
         .runtime__right__cart__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 35px;
             font-weight: 400;
             line-height: 35px;
@@ -3855,7 +4314,7 @@ body {
         }
 
         .runtime__right__cart__text {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 14px;
             font-weight: 300;
             line-height: 10px;
@@ -3882,7 +4341,7 @@ body {
         }
 
         .runtime__right__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 400;
             line-height: 23.2px;
@@ -3908,7 +4367,7 @@ body {
     }
 
     .built__link {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 20px;
         font-weight: 250;
         line-height: 25px;
@@ -3923,7 +4382,7 @@ body {
     }
 
     .built__title {
-        font-family: TWK Lausanne, sans-serif;
+
         font-size: 80px;
         font-weight: 400;
         line-height: 80px;
@@ -3937,6 +4396,10 @@ body {
     }
     .progressive__download__active{
         width: 400px;
+
+
+        /* FOR BUG */
+        display: none;
     }
     .built__line {
         border: 2px solid #0000001A;
@@ -3977,7 +4440,7 @@ body {
         }
 
         .built__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 250;
             line-height: 25px;
@@ -3997,7 +4460,7 @@ body {
         }
 
         .built__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 40px;
             font-weight: 400;
             line-height: 50px;
@@ -4090,7 +4553,7 @@ body {
         }
 
         .built__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 25px;
             font-weight: 250;
             line-height: 25px;
@@ -4106,7 +4569,7 @@ body {
         }
 
         .built__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 35px;
             font-weight: 400;
             line-height: 50px;
@@ -4177,7 +4640,7 @@ body {
         }
 
         .built__link {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 20px;
             font-weight: 250;
             line-height: 25px;
@@ -4193,7 +4656,7 @@ body {
         }
 
         .built__title {
-            font-family: TWK Lausanne, sans-serif;
+
             font-size: 30px;
             font-weight: 400;
             line-height: 50px;
