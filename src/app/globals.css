@@ -117,6 +117,8 @@ body {
 .hamburger {
   display: none;
   border: none;
+  cursor: pointer;
+  z-index: 30   ;
 }
 
 .nav {
@@ -965,7 +967,7 @@ body {
 
 @media (max-width: 1000px) {
   .progressive {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
   }
 
