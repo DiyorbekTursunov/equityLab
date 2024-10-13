@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import header_logo from "./img/header_logo.svg";
 import hero_bg from "./img/hero_bg.png";
 import icon from "./img/icon.svg";
@@ -12,52 +12,52 @@ import media_1 from "./img/Media-1.png";
 import media_2 from "./img/media-2.png";
 import media_3 from "./img/media-3.png";
 import media_4 from "./img/media-4.png";
-import compute_1 from "./img/compute_1.png";
-import compute_2 from "./img/compute_2.png";
+// import compute_1 from "./img/compute_1.png";
+// import compute_2 from "./img/compute_2.png";
 import "./ai.css"
-import revolution_section__nvidia_logo from "@/app/img/revalution/revolution-nvidia-logo.png";
-import revolution_cpu_img from "@/app/img/revalution/revolution-cpu-img.png";
-import mother_board from "@/app/img/revalution/mother_board.png";
-import dell_server from "@/app/img/revalution/dell_server.png";
-import Link from "next/link";
+// import revolution_section__nvidia_logo from "@/app/img/revalution/revolution-nvidia-logo.png";
+// import revolution_cpu_img from "@/app/img/revalution/revolution-cpu-img.png";
+// import mother_board from "@/app/img/revalution/mother_board.png";
+// import dell_server from "@/app/img/revalution/dell_server.png";
+// import Link from "next/link";
 
-import trust_right from '@/app/img/trust/trust_right.svg'
+// import trust_right from '@/app/img/trust/trust_right.svg'
 
-import climateImage from "./img/runtime/climate.png";
-import textIconImage from "./img/runtime/text-icon.svg";
-import image57 from "./img/runtime/57.png";
-import image43 from "./img/runtime/43.png";
-import rightImage from "./img/runtime/right'.png"; // Corrected filename without the quote
-import runtimeRightImage from "./img/runtime/runtime__right.svg";
+// import climateImage from "./img/runtime/climate.png";
+// import textIconImage from "./img/runtime/text-icon.svg";
+// import image57 from "./img/runtime/57.png";
+// import image43 from "./img/runtime/43.png";
+// import rightImage from "./img/runtime/right'.png"; // Corrected filename without the quote
+// import runtimeRightImage from "./img/runtime/runtime__right.svg";
 
-import masterImage from "./img/built/master.png";
-import deluxeImage from "./img/built/deluxe.png";
-import adqImage from "./img/built/adq.png";
-import amgenImage from "./img/built/amgen.png";
-import acros from "./img/ai/acrros.svg"
+// import masterImage from "./img/built/master.png";
+// import deluxeImage from "./img/built/deluxe.png";
+// import adqImage from "./img/built/adq.png";
+// import amgenImage from "./img/built/amgen.png";
+// import acros from "./img/ai/acrros.svg"
 import sertificate_1 from "./img/ai/sertificate_1.svg"
 import sertificate_2 from "./img/ai/sertificate_2.svg"
 import sertificate_3 from "./img/ai/sertificate_3.svg"
 import sertificate_container_bg from "./img/ai/sertificate_container_bg.png"
 import sertificate_right from "./img/ai/sertificate_right_img.png"
 import aiImage from "./img/ai/ai_bg.png"
-import arrow from "./img/abdulaziz/arrow.svg"
+// import arrow from "./img/abdulaziz/arrow.svg"
 import risk_bg from "./img/abdulaziz/bg.png"
-import certificate from "./img/abdulaziz/certificate.svg"
-import cpu from "./img/abdulaziz/cpu.svg"
-import database from "./img/abdulaziz/database.svg"
-import fingerPrint from "./img/abdulaziz/fingerprint.svg"
+// import certificate from "./img/abdulaziz/certificate.svg"
+// import cpu from "./img/abdulaziz/cpu.svg"
+// import database from "./img/abdulaziz/database.svg"
+// import fingerPrint from "./img/abdulaziz/fingerprint.svg"
 // Use the imported images in your component
 
 export default function Home() {
-  const [inputStates, setInputStates] = useState(Array(6).fill(false));
+//   const [inputStates, setInputStates] = useState(Array(6).fill(false));
 
-  // Har bir inputning holatini yangilash uchun funksiya
-  const handleInputClick = (index: number) => {
-    setInputStates((prevState) =>
-      prevState.map((state, idx) => (idx === index ? true : state))
-    );
-  };
+//   // Har bir inputning holatini yangilash uchun funksiya
+//   const handleInputClick = (index: number) => {
+//     setInputStates((prevState) =>
+//       prevState.map((state, idx) => (idx === index ? true : state))
+//     );
+//   };
 
   return (
     <>
