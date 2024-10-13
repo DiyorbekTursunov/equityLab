@@ -2432,6 +2432,10 @@ body {
           padding: 0;
         }
 
+        .resources__title{
+                font-size: 54px;
+        }
+
         .revolution-section__title {
           font-size: 30px;
           line-height: 30px;

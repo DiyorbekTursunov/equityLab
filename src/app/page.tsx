@@ -236,7 +236,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="compute">
+      {/* <section className="compute">
         <div className="compute_container">
           <h2 className="compute_title">A New Era of Compute</h2>
           <p className="compute_text">
@@ -295,8 +295,10 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
-      <section className="varifable">
+      </section> */}
+
+
+      {/* <section className="varifable">
         <div className="varifable-container">
           <div className="varifable-info">
             <h2 className="varifable-basic">The Basics</h2>
@@ -357,7 +359,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="progressive__download">
+            <div className="progressive__download">
               <div className="progressive__box">
                 <a href="#free" className="progressive__box__link">
                   Free
@@ -370,7 +372,7 @@ export default function Home() {
                   View Demo
                 </button>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="evolved">
             <div className="evolved-info">
@@ -379,7 +381,9 @@ export default function Home() {
             <h2 className="evolved-title">Evolved AI = Evolved Threats</h2>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
       <section
         className="risk"
         style={{
@@ -415,6 +419,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="site-control-wrapper">
         <div className="container">
           <div className="site-control">
@@ -490,7 +495,7 @@ export default function Home() {
       </section>
 
       {/*  */}
-      <section className="dont">
+      {/* <section className="dont">
         <div className="dont__container">
           <div className="dont__wrap">
             <div className="dont__wrap__left">
@@ -507,7 +512,7 @@ export default function Home() {
                   <span className="dont__wrap__left__span">Verify</span>
                 </p>
               </div>
-              {/* <div className="progressive__download">
+              <div className="progressive__download">
                 <div className="progressive__box">
                   <h2 className="progressive__box__title">
                     Explore deployment <br />
@@ -521,7 +526,7 @@ export default function Home() {
                     Download White paper
                   </button>
                 </div>
-              </div> */}
+              </div>
             </div>
             <div className="dont__wrap__right">
               <div className="dont__wrap__right__cart__one">
@@ -561,9 +566,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="runtime">
+      {/* <section className="runtime">
         <div className="runtime__container">
           <div className="runtime__wrap">
             <div className="runtime__box">
@@ -645,8 +650,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="built">
+      </section> */}
+
+      {/* <section className="built">
         <div className="built__container">
           <a href="" className="built__link">
             Our Customer{" "}
@@ -658,7 +664,7 @@ export default function Home() {
           <div className="built__line" />
           <div className="built__wrap">
 
-            {/* <div className="progressive__download progressive__download__active">
+            <div className="progressive__download progressive__download__active">
               <div className="progressive__box">
                 <h2 className="progressive__box__title">
                   Explore deployment <br />
@@ -672,7 +678,7 @@ export default function Home() {
                   Download White paper
                 </button>
               </div>
-            </div> */}
+            </div>
             <ul className="built__wrap__list">
               <li className="built__wrap__item">
                 <a href="" className="built__wrap__link">
@@ -697,12 +703,12 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*  */}
 
       {/* This is for Diyorbek Start */}
 
-      <section className="trust-evolves">
+      {/* <section className="trust-evolves">
         <h2 className="trust-evolves__title">Trust Evolves</h2>
       </section>
 
@@ -968,7 +974,7 @@ export default function Home() {
             className="compliant-ready-image"
           />
         </div>
-      </section>
+      </section> */}
       {/* This is for Diyorbek End */}
 
       <div className="ai_bg_div">
@@ -1001,7 +1007,7 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="trust">
+      {/* <section className="trust">
         <div className="trust_container">
           <div className="trust_top">
             <div className="turst_left">
@@ -1062,9 +1068,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="across">
+      {/* <section className="across">
         <div className="across_container">
           <h2 className="across_title">Across Any Deployment.</h2>
           <div className="across_arrow">
@@ -1089,7 +1095,7 @@ export default function Home() {
             Read Case Study
           </button>
         </div>
-      </section>
+      </section> */}
       <section className="certificate">
         <div className="sertificate_container">
           <div className="sertificate_container_bg">
@@ -1268,6 +1274,7 @@ export default function Home() {
           </div> */}
         </div>
       </section>
+
       <section className="customer">
         <div className="customer__container">
           <h2 className="customer__title">Customer Success Stories</h2>
@@ -1299,6 +1306,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="resources">
         <div className="resources__container">
           <h2 className="resources__title">Resources</h2>
@@ -1425,7 +1433,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="footer_top_responsive">
+
+      {/* <div className="footer_top_responsive">
         <div className="footer_top_responsive_container">
           <div className="footer_left_responsive">
             <h2 className="footer_title_responsive">
@@ -1561,7 +1570,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }
