@@ -302,7 +302,7 @@ export default function Home() {
             <h2 className="varifable-basic">The Basics</h2>
             <h2 className="varifable-title">Verifiable Compute</h2>
             <div className="verify">
-              <p className="verify-text">Let's you Verify:</p>
+              <p className="verify-text">Let&apos;s you Verify:</p>
               <div className="verify-cards">
                 <div className="verify-card">
                   <div className="verify-card-img">
@@ -409,7 +409,7 @@ export default function Home() {
               </p>
 
               <p className="risk-text-five">
-                You can't risk <br /> blind trust of AI
+                You can&apos;t risk <br /> blind trust of AI
               </p>
             </div>
           </div>
@@ -499,7 +499,7 @@ export default function Home() {
                   The Opportunity:
                 </a>
                 <h2 className="dont__wrap__left__title">
-                  Don't Just
+                  Don&apos;t Just
                   <br /> Trust AI
                 </h2>
                 <p className="dont__wrap__left__text">
@@ -729,11 +729,11 @@ export default function Home() {
 
             <div className="revolution-section__text">
               <p>
-                NVIDIA's Grace Hopper and Blackwell Architecture with
+                NVIDIA&apos;s Grace Hopper and Blackwell Architecture with
                 Confidential Compute.
               </p>
               <p>
-                Intel's 5th Generation Xeon Processor with the TDX Trust
+                Intel&apos;s 5th Generation Xeon Processor with the TDX Trust
                 Authority.
               </p>
             </div>
@@ -749,7 +749,7 @@ export default function Home() {
             <h3 className="digital-notary__title">Meet Your Digital Notary</h3>
 
             <p className="digital-notary__description">
-              EQTY Lab's hardware-backed solution notarizes all data and each
+              EQTY Lab&apos;s hardware-backed solution notarizes all data and each
               compute cycle with advanced cryptography
             </p>
           </div>
@@ -915,7 +915,7 @@ export default function Home() {
             <h3 className="zero-trust__title">Zero-trust </h3>
             <p className="zero-trust__description">
               architecture extends the AI security permeter to AI compute on
-              servers you don't own or control.
+              servers you don&apos;t own or control.
             </p>
           </div>
 
@@ -989,7 +989,7 @@ export default function Home() {
               <p className="ai_text mb-15">
                 Pop. 14,566 and the{" "}
                 <span className="text-semibold">
-                  World's First Verifiable AI
+                  World&apos;s First Verifiable AI
                 </span>
               </p>
               <button className="ai_btn">
@@ -1007,7 +1007,7 @@ export default function Home() {
             <div className="turst_left">
               <h2 className="trust_title">Trust across your AI supply chain</h2>
               <p className="trust_text">
-                <span>EQTY's Governance Studio is bundled</span> with each
+                <span>EQTY&apos;s Governance Studio is bundled</span> with each
                 verifiable compute node to tailor governance across all your
                 stakeholder needs and automate over 80% reporting across your
                 systems.
